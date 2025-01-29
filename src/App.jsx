@@ -54,6 +54,7 @@ function App() {
         
         getBalance();
       } catch (error) {
+        console.log(error)
         toast.error(error.message || 'Failed to deposit');
       }
     } else {
